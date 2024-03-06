@@ -197,11 +197,11 @@ class SplTempFileObject extends SplFileObject {
 
 class DirectoryIterator
   extends SplFileInfo
-  implements SeekableIterator<~SplFileInfo> {
+  implements SeekableIterator<~DirectoryIterator> {
 
   // Methods
   public function __construct(string $path);
-  public function current(): ~SplFileInfo;
+  public function current(): ~DirectoryIterator;
   public function isDot(): bool;
   public function next(): void;
   public function rewind(): void;
